@@ -12,13 +12,17 @@ Quickstart:
 1. Optional: Set custom language mappings
 1. Enjoy two-way language file syncing
 
-![img](hr.svg)
+# Support
+
+https://processwire.com/talk/topic/27199-rocklanguage-finally-a-good-and-easy-way-to-ship-processwire-modules-with-translation-files-%F0%9F%A5%B3
 
 # Donations
 
 [![img](https://github.com/baumrock/RockFinder3/raw/master/donate.svg)](https://paypal.me/baumrock)
 
 😎🤗👍
+
+![img](hr.svg)
 
 # The Problem
 
