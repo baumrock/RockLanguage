@@ -124,7 +124,7 @@ class RockLanguage extends WireData implements Module, ConfigurableModule {
       'type' => 'markup',
       'label' => 'Available Mappings',
       'value' => $this->getLanguageCodes(true),
-      'notes' => 'This field lists all available languages and their folder names that will be used to push/pull translation files to.'
+      'notes' => 'This field lists all available languages and their folder names that will be used to push/pull translation files to/from.'
         ."\nA foldername **DE** means that translations will be synced to /site/modules/YourModule/RockLang/**DE**/yourfile.json",
     ]);
 
