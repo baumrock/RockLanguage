@@ -14,6 +14,12 @@ Quickstart:
 
 ![img](hr.svg)
 
+# Donations
+
+[![img](https://github.com/baumrock/RockFinder3/raw/master/donate.svg)](https://paypal.me/baumrock)
+
+😎🤗👍
+
 # The Problem
 
 ProcessWires translation system itself is great. You can easily add translatable strings in any PHP file and the string will show up in the site's translation interface.
@@ -81,3 +87,8 @@ No complicated export of csv files etc 😎
 
 * At the moment this will only work for modules in `/site/modules` though the concept could easily be applied to modules in the wire folder as well - but there we have the concept of language packs wich already works well.
 * I'm not sure how to handle this but I've also thought of having a central place for managing translations. Like for example a github repository that holds the translations of several modules in several languages, what do you think?
+
+# Feedback
+
+What do you think of this concept? Will you use the module? Should the concept be part of the core instead? Please let me know in the forum support thread...
+
