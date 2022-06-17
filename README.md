@@ -2,7 +2,7 @@
 
 <br>
 
-### Finally a good and easy way to ship ProcessWire modules with translation files 🥳
+### A new way to ship ProcessWire modules with translation files 🥳
 
 <br>
 
