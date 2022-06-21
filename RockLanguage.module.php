@@ -9,7 +9,7 @@ class RockLanguage extends WireData implements Module, ConfigurableModule {
   public static function getModuleInfo() {
     return [
       'title' => 'RockLanguage',
-      'version' => '1.0.0',
+      'version' => '1.0.1',
       'summary' => 'Easily manage and ship translation files for your modules',
       'autoload' => true,
       'singular' => true,
@@ -33,7 +33,7 @@ class RockLanguage extends WireData implements Module, ConfigurableModule {
 
   public function getCustomCodes() {
     $codes = [];
-    foreach(explode("\n", $this->customCodes) as $line) {
+    foreach(explode("\n", $this->customCodes ?: '') as $line) {
       $parts = explode("=", $line, 2);
       if(count($parts)!=2) continue;
       $codes[$parts[0]] = $parts[1];
@@ -45,6 +45,7 @@ class RockLanguage extends WireData implements Module, ConfigurableModule {
    * @return array
    */
   public function getLanguageCodes($returnString = false) {
+    if(!$this->wire->languages) return [];
     $codes = [];
     $string = '';
     $custom = $this->getCustomCodes();
