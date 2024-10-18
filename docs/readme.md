@@ -17,3 +17,15 @@ Here's what the module translation process looks like with RockLanguage:
 
 
 What's nice about this workflow is that it takes some manual steps out of the equation, thus streamlining translation management. It's too early to say how widely this module will be adopted among public third party modules, but if you like the concept, you can easily start using it for your own modules right away.
+
+## Real World Example
+
+[RockCalendar](https://www.baumrock.com/RockCalendar) ships with german translations. All I had to do to pull them into my module's folder was this:
+
+- Install RockLanguage
+- Setup language mapping, in my case the german language had the name "german", so I mapped "german" to "DE": `german=DE`
+- Add the language folder to my module: `/site/modules/RockCalendar/RockLanguage/DE/`
+- Translate via ProcessWire's language manager
+- Done. The translation files are now in my module's folder and synced with ProcessWire.
+
+Whenever I need to update or add a translation, all I have to do is to translate via ProcessWire's language manager, and the file in my module's folder is automatically updated, ready to be committed to GitHub. 🚀😎
