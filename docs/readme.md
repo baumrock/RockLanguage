@@ -1,29 +1,19 @@
 # RockLanguage
 
-RockLanguage is a module that allows you to manage language translations in a more efficient way.
+Teppo is much butter in writing than I am. RockLanguage was announced in his ProcessWire Weekly Newsletter: https://weekly.pw/issue/422/
 
-ProcessWire's native language management is very powerful, but it can be a bit cumbersome to manage translations, especially to ship your module with translations.
+This week we're happy to introduce a brand new module from Bernhard Baumrock, called RockLanguage. As the name suggests, RockLanguage is a tool for dealing with translations, and more specifically with translations related to ProcessWire modules.
+
+While ProcessWire natively ships with extensive language support, including the ability to ship module translations with the module itself, this does still require some manual work. That is exactly what RockLanguage aims to solve.
+
+Here's what the module translation process looks like with RockLanguage:
 
 ## Usage
 
-- Setup language mappings (eg `german=DE`)
-- Create a folder for every language that your module supports, eg `site/modules/MyModule/RockLanguage/DE`
-- Enjoy! 🚀
+- Install RockLanguage on your site and (optionally) configure custom language code mapping via the module configuration screen.
+- Add a directory for the language you'd like to include translations for within your own module's directory, e.g. /site/modules/MyModule/RockLanguage/FI/ for the Finnish language.
+- Translate your module for said language via ProcessWire's translations manager. RockLanguage will automatically notice the update and duplicate the translation file from its original source to the directory you've just created.
+- Now if you install this module to another site with the language folder included, and the site has RockLanguage installed and Finnish as one of its languages, the translation files for your module will be automatically synced with ProcessWire.
 
-## WHY I built this module
 
-Imagine you are a module developer and you want to ship your module with german translations, as your native language is german and most of your customers speak german as well. What would you have to do using ProcessWire's native language management?
-
-- Translate your module via ProcessWire's translation interface.
-- Export translation files, which can be [quite complicated](https://processwire.com/blog/posts/pw-3.0.181-hello/) (and now imagine what you would have done if you didn't know where to find that information!)
-- Find all the files that contain translations
-- Copy them over to your module. Which folder? I don't know, you'd have to look that up and make sure it works. It's not fun...
-- Write docs for your users on how to install those translations
-
-This is by far too much work for me!
-
-You don't agree? Ok, you are right, that's not too bad. You only have to do this once, right?
-
-No! You have to do this every single time you changed a translation!
-
-You still don't agree? Ok, thanks for reading this far. This module is not for you. Please go ahead and check out one of my other modules 😉
+What's nice about this workflow is that it takes some manual steps out of the equation, thus streamlining translation management. It's too early to say how widely this module will be adopted among public third party modules, but if you like the concept, you can easily start using it for your own modules right away.
