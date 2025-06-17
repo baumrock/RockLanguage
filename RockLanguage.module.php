@@ -128,10 +128,11 @@ class RockLanguage extends WireData implements Module, ConfigurableModule
   {
     $inputfields->add([
       'type' => 'markup',
-      'label' => 'Available Mappings',
+      'label' => 'Available Mappings: [language-name]=[folder-name]',
       'value' => $this->getLanguageCodes(true),
       'notes' => 'This field lists all available languages and their folder names that will be used to push/pull translation files to/from.
-        A foldername **DE** means that translations will be synced to /site/modules/YourModule/RockLanguage/**DE**/yourfile.json;
+        Example: If you want the language "german" to use translations in the "DE" folder, enter "german=DE".
+        A foldername **DE** means that translations will be synced to /site/modules/[YourModule]/RockLanguage/**DE**/[some-translation-file].json;
         Sync will only take place if $config->debug=true and user is superuser!',
     ]);
 
